@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>21</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="bt_add">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>70</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Cadastrar/adcionar novo remédio ao banco de dados</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cadastra novos remedios no banco de dados.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+padding: 5px 3px;
+background-color: #4CAF50;
+border-radius: 15px;
+}
+
+
+QPushButton:hover{
+background-color: green;
+}
+
+
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/botao-adicionar.png</normaloff>icons/botao-adicionar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_funcionario">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>70</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Cadastrar funcionários</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+padding: 5px 3px;
+background-color: #4CAF50;
+border-radius: 15px;
+}
+
+
+QPushButton:hover{
+background-color: green;
+}
+
+
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/cadastrar_funcionario.png</normaloff>icons/cadastrar_funcionario.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_comprar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>70</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>registrar compra</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+padding: 5px 3px;
+background-color: #4CAF50;
+border-radius: 15px;
+}
+
+
+
+QPushButton:hover{
+background-color: green;
+}
+
+
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/carrinho-carrinho.png</normaloff>icons/carrinho-carrinho.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_ver">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>70</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Ver remédios  cadastrados</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+padding: 5px 3px;
+background-color: #4CAF50;
+border-radius: 15px;
+}
+
+
+QPushButton:hover{
+background-color: green;
+}
+
+
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/tabela-de-edicao.png</normaloff>icons/tabela-de-edicao.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>43</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_exit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>330</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>voltar para tela de login</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+padding: 5px 3px;
+background-color: #4CAF50;
+border-radius: 15px;
+}
+
+
+QPushButton:hover{
+background-color: green;
+}
+
+
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/sair.png</normaloff>icons/sair.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_tittle">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>321</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>21</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_logo">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>301</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icons/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <action name="actioncadastrar">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/newPrefix/pack_icons/botao-adicionar.png</normaloff>:/newPrefix/pack_icons/botao-adicionar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cadastra remedio no banco de dados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionapagar">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/newPrefix/pack_icons/lixeira-de-reciclagem.png</normaloff>:/newPrefix/pack_icons/lixeira-de-reciclagem.png</iconset>
+   </property>
+   <property name="text">
+    <string>Apagar remedio do banco de dados</string>
+   </property>
+  </action>
+  <action name="actionrefrersh">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/newPrefix/pack_icons/refresh.png</normaloff>:/newPrefix/pack_icons/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>refrersh</string>
+   </property>
+   <property name="toolTip">
+    <string>atualiza o banco de dados</string>
+   </property>
+  </action>
+  <action name="actionatualizar">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/newPrefix/pack_icons/editar-informacao.png</normaloff>:/newPrefix/pack_icons/editar-informacao.png</iconset>
+   </property>
+   <property name="text">
+    <string>atualizar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="myqrc1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
